@@ -1,0 +1,39 @@
+<?php
+/*** set the content type header ***/
+/*** Without this header, it wont work ***/
+header("Content-type: text/css");
+
+
+body {
+    background-image: url("gradient_bg.png");
+    background-repeat: repeat-x;
+}
+
+input[type=text], input[type=button] {
+    background-color: #4CAF50;
+    border: groove;
+    border-radius: 10px
+    color: white;
+    padding: 4px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: line;
+}
+
+h1 {
+    color: maroon;
+    margin-left: 40px;
+} 
+
+h2 {
+    color: maroon;
+    margin-left: 40px;
+}
+
+div {
+    background-color: lightblue;
+}
+
+p {
+    background-color: lightgreen;
+}

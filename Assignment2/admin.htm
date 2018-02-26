@@ -1,0 +1,23 @@
+<!-- file admin.htm -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Admin Materials</title>
+	<script type="text/javascript" src="admin.js"></script>
+	<!-- Link php/css file -->
+	<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+	<h2>Administration</h2>
+<form>
+<input type="button" value="Show Pick-up Requests" onclick="searchBooking()" /> <br /><br />
+<div id="table"><b> </b></div><br />
+Assign Taxi (BookingNumber): <input id="BookingNumber" name="BookingNumber" type="text" />
+<input type="button" value="Assign Taxi" onclick="assignTaxi()" />
+<div id="result"><b> </b> </div> <br />
+</select>
+</form>
+<br>
+
+</body>
+</html>

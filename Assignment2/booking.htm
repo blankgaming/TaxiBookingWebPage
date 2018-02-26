@@ -1,0 +1,25 @@
+﻿<!– file booking.htm -->
+<HTML XMLns="http://www.w3.org/1999/xHTML"> 
+  <head> 
+    <title>Taxi Booking</title> 
+	<script type="text/javascript" src="xhr.js"></script>
+    	<script type="text/javascript" src="GetDataFile.js"> </script>
+	<!-- Link php/css file -->
+	<link rel="stylesheet" href="style.css" type="text/css">
+  </head> 
+  <body>
+  <H1>Taxi Booking</H1>
+	<form>
+	    <label>Name:  <input type="text" name="Name"> <br> </label>
+ 	    <label><br>Phone: <input type="text" name="Phone"> <br> </label>
+		<label><br>PickUp: <input type="text" name="PickUp"> <br> </label>
+		<label><br>Destination: <input type="text" name="Destination"> <br> </label>
+		<label><br>PicupTime: <input type="text" name="PickupTime"> <br> </label>
+		<label><br>PickupDate: <input type="text" name="PickupDate"> <br><br> </label>
+	    <input name="submit" type = "button" onClick = "getData('RequestInput.php','targetDiv', Name.value, Phone.value, PickUp.value, Destination.value, PickupTime.value, PickupDate.value) " value = "Booking">
+	</form>
+	<div id="targetDiv"> 
+	    <p>The fetched data will go here.</p>  
+	</div> 
+ </body> 
+</HTML>
